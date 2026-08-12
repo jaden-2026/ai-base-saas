@@ -1,0 +1,3 @@
+import { Component, type ErrorInfo, type ReactNode } from 'react'
+
+export class ErrorBoundary extends Component<{children:ReactNode},{error:Error|null}>{state:{error:Error|null}={error:null};static getDerivedStateFromError(error:Error){return{error}}componentDidCatch(error:Error,info:ErrorInfo){console.error('SkillPort render failed',error,info)}render(){if(this.state.error)return <div className="startup-error"><div className="brand-mark"><span/><span/><span/></div><h1>页面渲染失败</h1><p>{this.state.error.message}</p><button onClick={()=>{localStorage.removeItem('skillport_session');location.reload()}}>清理会话并重新加载</button></div>;return this.props.children}}

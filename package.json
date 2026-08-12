@@ -1,0 +1,46 @@
+{
+  "name": "skillport-ai",
+  "private": true,
+  "version": "1.2.1",
+  "author": "jaden.peng <jaden.peng@outlook.com> (tel:18210659132)",
+  "license": "SEE LICENSE IN LICENSE",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k -n API,WEB -c cyan,magenta \"tsx watch server/index.ts\" \"vite --host 0.0.0.0 --port 5173 --strictPort\"",
+    "dev:web": "vite --host 0.0.0.0 --port 5173 --strictPort",
+    "dev:api": "tsx watch server/index.ts",
+    "db:setup": "tsx server/setup.ts",
+    "test:api": "tsx server/integration.ts",
+    "check:styles": "node scripts/check-styles.mjs",
+    "build": "pnpm check:styles && tsc -b && tsc -p server/tsconfig.json && vite build && pnpm check:styles --dist",
+    "start": "node server-dist/index.js",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "dependencies": {
+    "@fastify/cors": "latest",
+    "@fastify/multipart": "latest",
+    "@fastify/static": "latest",
+    "@vitejs/plugin-react": "latest",
+    "fastify": "latest",
+    "ioredis": "latest",
+    "lucide-react": "latest",
+    "pg": "latest",
+    "qrcode": "^1.5.4",
+    "react": "latest",
+    "react-dom": "latest",
+    "svg-captcha": "^1.4.0",
+    "typescript": "latest",
+    "vite": "latest",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/pg": "latest",
+    "@types/qrcode": "^1.5.6",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "concurrently": "latest",
+    "tsx": "latest"
+  },
+  "packageManager": "pnpm@11.10.0"
+}

@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.vite/
+*.tsbuildinfo
+vite.config.js
+vite.config.d.ts
+*.local
+*.log
+.DS_Store
+.env
+.env.*
+!.env.example
+uploads/
+server-dist/
+.runtime/
+release/
+doc/生成环境部署备份.md
