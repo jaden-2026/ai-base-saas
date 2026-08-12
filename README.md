@@ -4,6 +4,8 @@
 
 面向企业的多租户 AI 模型资源管理平台。SkillPort AI 集中管理模型服务商、模型目录和访问凭证，并通过租户、角色权限、套餐订阅与审计能力提供统一治理。
 
+参考项目平台：https://www.zhihu.com/project/detail/60350
+
 > 当前版本：`1.2.1`
 >
 > 本项目采用修改版 Apache License 2.0。该协议包含多租户运营及前端 LOGO/版权信息方面的附加条件，使用前请完整阅读 [LICENSE](./LICENSE)。
