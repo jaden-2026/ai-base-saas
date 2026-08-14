@@ -6,6 +6,8 @@
 
 参考项目平台：https://www.zhihu.com/project/detail/60350
 
+体验地址：https://43.139.33.247/  
+
 > 当前版本：`1.2.1`
 >
 > 本项目采用修改版 Apache License 2.0。该协议包含多租户运营及前端 LOGO/版权信息方面的附加条件，使用前请完整阅读 [LICENSE](./LICENSE)。
