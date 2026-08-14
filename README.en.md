@@ -4,6 +4,8 @@
 
 An enterprise-oriented, multi-tenant platform for managing AI model resources. SkillPort AI centralizes model providers, model catalogs, and access credentials, with unified governance through tenants, role-based access control, subscriptions, and auditing.
 
+Demo：https://43.139.33.247/
+
 > Current version: `1.2.1`
 >
 > This project uses a modified Apache License 2.0 . It includes additional conditions concerning multi-tenant operation and frontend LOGO/copyright information. Read [LICENSE](./LICENSE) in full before use.
